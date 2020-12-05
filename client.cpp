@@ -53,12 +53,12 @@ QSqlQueryModel * Client::afficher_Client()
 {QSqlQueryModel * model= new QSqlQueryModel();
 
     model->setQuery("select * from CLIENT");
-    model->setHeaderData(0, Qt::Horizontal, QObject::tr("CIN"));
-    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
-    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom"));
-    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Livraison"));
-    model->setHeaderData(4, Qt::Horizontal, QObject::tr("Date"));
-    model->setHeaderData(5, Qt::Horizontal, QObject::tr("Produit"));
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Nom"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Prenom"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Livraison"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Date"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("Produit"));
+    model->setHeaderData(5, Qt::Horizontal, QObject::tr("CIN"));
 
     return model;
 }
